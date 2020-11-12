@@ -26,3 +26,6 @@ td, th {
 th {
     border-bottom: 2px solid blue;
 }
+input {
+    width: 225px;
+}
