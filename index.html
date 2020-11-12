@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="calculate.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplexer combinational circuit</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <form>
+        Function variables: <input id="variables" placeholder="separated by comma or single space" />
+        <br />
+        Minterms:
+        <input id="minterms" placeholder="separated by comma or single space" />
+
+        <br />
+        <label>Type:</label>
+
+        <select id="type">
+            <option value=2>2 X 1</option>
+            <option value=4>4 X 1</option>
+            <option value=8>8 X 1</option>
+            <option value=16>16 X 1</option>
+            <option value=32>32 X 1</option>
+            <option value=64>64 X 1</option>
+        </select>
+
+        <button name="data" type="button" onclick="show()">Calculate</button>
+    </form>
+    <div class='results'>
+        <table id="truthTable">
+
+        </table>
+        <table id="inputs"></table>
+        <table id="selectLines"></table>
+    </div>
+</body>
+
+</html>

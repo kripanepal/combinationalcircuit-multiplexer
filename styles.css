@@ -1,0 +1,28 @@
+table {
+    display: inline-block;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.results {
+    display: flex;
+    align-items: center;
+}
+
+#truthTable tr:nth-child(even)>td, #truthTable>th {
+    border-bottom: 2px solid red;
+}
+
+.select {
+    border-left: 2px solid blue;
+}
+
+th {
+    border-bottom: 2px solid blue;
+}
